@@ -26,13 +26,13 @@ import {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box border="1px solid black">
+      <Box >
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
           minH={'60px'}
           px={{ base: "11%" }}
-          borderBottom={1}
+          // borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
           align={'center'}>
