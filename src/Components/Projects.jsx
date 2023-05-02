@@ -12,7 +12,7 @@ export const Projects=()=>{
     return(<>
         <Box  id="projects"  margin={"auto"} pt={{base:"55px",sm:"55px",md:"70px"}}  pb={{base:"50px",sm:"50px",md:"200px",lg:"200px",'2xl':"200px"}} width={"90%"}  >
             <Text fontWeight={500} fontSize={"50px"} textAlign={"center"} >Projects</Text>
-            <Grid margin={"auto"} gap={{base:"25px",sm:"30px",md:"50px",lg:"50px",'2xl':"50px"}} justifyContent={"center"} gridTemplateColumns={{base:"repeat(1,100%)",sm:"repeat(1,100%)",md:"repeat(1,35%)",lg:"repeat(2,35%)",'2xl':"repeat(2,35%)"}}  mt={{base:"10px",md:"20px"}}   >
+            <Grid margin={"auto"} gap={{base:"25px",sm:"30px",md:"50px",lg:"50px",'2xl':"50px"}} justifyContent={"center"} gridTemplateColumns={{base:"repeat(1,100%)",sm:"repeat(1,100%)",md:"repeat(1,100%)",lg:"repeat(2,35%)",'2xl':"repeat(2,35%)"}}  mt={{base:"10px",md:"20px"}}   >
                 <Box className="project-card" p={"20px 15px"} _hover={{border:"1px solid rgb(224,87,87)"}}  textAlign={"start"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px;"}   >
                     <Img src={p1} border={"1px solid black"} />
                     <Text color={color} className="project-title" mt="10px" fontWeight={600} fontSize={"20px"}>Shoppers</Text>

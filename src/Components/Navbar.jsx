@@ -82,20 +82,21 @@ export default function Navbar() {
           direction={'row'}
           spacing={0}>
 
-          <a href={Resume} download={"Nikhil-Malik-Resume"}  >
+          
           <Button
             ml="35px"
             color={useColorModeValue("black","white")}
             borderRadius="0px"
             bg="none"
             _hover={{bg:"rgb(224,87,87)",color:"white"}}
-            className="nav-link resume"
+            id="resume-button-1"
             // fontSize={'sm'}
             // variant={'link'}
             >
+            <a href={Resume} id="resume-link-1"  download={"Nikhil-Malik-Resume"} className="nav-link resume" >
             Resume
-          </Button>
             </a>
+          </Button>
 
             <DarkModeButton />
           
@@ -204,7 +205,7 @@ const MobileNav = () => {
       p={4}
       display={{ md: 'none' }}>
       {NAV_ITEMS.map((navItem) => (
-        <LINK to={navItem.href} className={navItem.className}   smooth={true}  >
+        <LINK to={navItem.href}  smooth={true}  >
           <MobileNavItem key={navItem.label} {...navItem} />
         </LINK>
       ))}
@@ -254,7 +255,7 @@ const MobileNavItem = ({ label, children, href }) => {
           align={'start'}>
           {children &&
             children.map((child) => (
-              <LINK key={child.label}  className={child.className} py={2} to={child.href} offset={50} duration={-500} smooth={true}>
+              <LINK key={child.label}  py={2} to={child.href} offset={50} duration={-500} smooth={true}>
                 {child.label}
               </LINK>
             ))}

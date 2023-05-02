@@ -17,7 +17,7 @@ export const Homepage=()=>{
                     <Text fontWeight={550} fontSize={35} >Hii, i'm</Text>
                     <Text  id="user-detail-name" fontWeight={550} fontSize={50}>NIKHIL MALIK</Text>
                     <Text color={"rgb(224,87,87)"} fontWeight={600} fontSize={30} >Full Stack Web Developer</Text>
-                    <Text id="user-detail-intro" mt={"20px"} color="gray"  >Passionate Full Stack Web Developer proficient in MERN stack. Seeking to advance a growing tech career as a Web Development Engineer.</Text>
+                    <Text mt={"20px"} color="gray"  >Passionate Full Stack Web Developer proficient in MERN stack. Seeking to advance a growing tech career as a Web Development Engineer.</Text>
                     <Flex justifyContent={"space-between"} width={{base:"50%",sm:"40%",md:"35%"}} mt={{base:6,md:12}}>
                        <a href="mailto: inikhilmalik@example.com" target="blank" > <Box  ><HiOutlineMail size={30} color={color}  /></Box></a>
                        <a href="https://github.com/inikhilmalik" target="blank" > <Box><FiGithub size={30} color={color } /></Box></a>
@@ -27,11 +27,11 @@ export const Homepage=()=>{
                     <Flex direction={{base:"column",sm:"row"}} mt={{base:"25px",md:"45px"}}>
                         
 
-                        <a href={Resume} download={"Nikhil-Malik-Resume"} id="resume-link-2" >
+                        <a href={Resume} download={"Nikhil-Malik-Resume"}  >
                             <Button id="resume-button-2"  _hover={{bg:"none",color:"black",border:"1px solid rgb(224,87,87)",color:useColorModeValue("black","white")}} borderRadius="0px" color="white" bg="rgb(224,87,87)" >Download Resume <FiDownload style={{margin:"5px"}} /></Button>
                         </a> 
-                        <a href={"https://drive.google.com/file/d/1EhwOuiFEVKV1ZAEM6O6RT_7AIBE6KpN9/view?usp=drivesdk"} id="resume-link-1" target="blank" >
-                            <Button id="resume-button-1" mt={{base:"10px",sm:"0px"}} _hover={{bg:"none",color:"black",border:"1px solid rgb(224,87,87)",color:useColorModeValue("black","white")}} borderRadius="0px" color="white" bg="rgb(224,87,87)" ml={{sm:"15px"}} >View Resume</Button>
+                        <a href={"https://drive.google.com/file/d/1EhwOuiFEVKV1ZAEM6O6RT_7AIBE6KpN9/view?usp=drivesdk"}  target="blank" >
+                            <Button  mt={{base:"10px",sm:"0px"}} _hover={{bg:"none",color:"black",border:"1px solid rgb(224,87,87)",color:useColorModeValue("black","white")}} borderRadius="0px" color="white" bg="rgb(224,87,87)" ml={{sm:"15px"}} >View Resume</Button>
                         </a> 
                         </Flex>
                     
