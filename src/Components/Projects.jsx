@@ -38,11 +38,11 @@ export const Projects=()=>{
                 <Box className="project-card" p={"20px 15px"} _hover={{border:"1px solid rgb(224,87,87)"}} textAlign={"start"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px;"}   >
                     <Img src={p2} border={"1px solid black"} />
                     <Text color={color} className="project-title" mt="10px" fontWeight={600} fontSize={"20px"}>Snapdeal-Clone</Text>
-                    <Text className="project-description">Snapdeal is an e-commerce website that sells clothes and products. It brings together a wide assortment of good quality product and value-priced merchandise on its platform.</Text>
+                    <Text className="project-description">Snapdeal is an e-commerce website that sells clothes and products. It brings together a wide assortment of good-quality products and value-priced merchandise on its platform.</Text>
                     <Text mt="15px" fontWeight={600} fontSize={"15px"}>Features :-</Text>
                     <Text >• Login & Signup validation with JWT & password hashing.</Text>
                     <Text >• Perform CRUD operation.</Text>
-                    <Text >• Sort functionality by price and colour.</Text>
+                    <Text >• Sort functionality by price and color.</Text>
                     <Text >• Add to cart and remove from the cart page.</Text>
                     <Text >• Complete end-to-end flow from login to payment gateway.</Text>
                     <Text className="project-tech-stack" mt="15px" fontWeight={600} fontSize={"15px"}>Tech Stack :-</Text>
@@ -50,7 +50,7 @@ export const Projects=()=>{
                     <Text  mt="15px" fontWeight={600} fontSize={"15px"}>Collaborative Project that took 5 days to complete.</Text>
                     <Text mt="15px" fontWeight={600} fontSize={"15px"}>Areas of Responsibility :-</Text>
                     <Text >• Implemented Login / Signup validation with backend routes.</Text>
-                    <Text mb="15px" className="project-tech-stack" >• Made all pages responsive and also created backend.</Text>
+                    <Text mb="15px" className="project-tech-stack" >• Made all pages responsive and also created the backend.</Text>
                     
                         <a className="project-deployed-link" href="https://marvelous-dieffenbachia-ed52a2.netlify.app/" target="blank" > <Button _hover={{bg:color,color:"white"}} className="project-deployed-link" borderRadius={"0px"} border="1px solid rgb(224,87,87)" mt={{base:"5px",sm:"0px"}} bg={useColorModeValue('white', 'none')} color={color} >Deploy <SiNetlify className="skills-card-img"  style={{margin:"0px 0px 0px 5px"}} size={20}/></Button> </a>
                         <a className="project-github-link" href="https://github.com/inikhilmalik/Snapdeal-clone" target="blank" ><Button _hover={{bg:color,color:"white"}} className="project-github-link" borderRadius={"0px"} ml={{base:"0px",sm:"10px"}} mt={{base:"5px",sm:"0px"}} border="1px solid rgb(224,87,87)" bg={useColorModeValue('white', 'none')} color={color} >Github <IoLogoGithub className="skills-card-img" style={{margin:"0px 0px 0px 5px"}} size={20}/></Button> </a>                    
