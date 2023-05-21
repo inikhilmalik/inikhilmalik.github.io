@@ -27,10 +27,21 @@ import {
   } from 'react-icons/md';
   import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
   import { RiLinkedinFill } from 'react-icons/ri';
+import { useState } from 'react';
   
   export default function Contact() {
+    const [name,setName]=useState("")
+    const [mail,setMail]=useState("")
+    const [message,setMessage]=useState("")
+
+    const handleClick=()=>{
+      setName("")
+      setMail("")
+      setMessage("")
+    }
+
     return (<>
-    <Box  margin={"auto"} bpb={"20px"} pt={{base:"5px",sm:"55px",md:"65px"}} width={"90%"}  id="contact" >
+    <Box margin={"auto"} bpb={"20px"} pt={{base:"5px",sm:"55px",md:"65px"}} width={"100%"}  id="contact" >
         <Text fontWeight={500} fontSize={"50px"} textAlign={"center"} >Contact</Text>
         <Container  maxW="full" mt={0} centerContent overflow="hidden">
         <Flex>
@@ -139,7 +150,7 @@ import {
                               pointerEvents="none"
                               children={<BsPerson color="gray.800" />}
                             />
-                            <Input type="text" size="md" />
+                            <Input onChange={(e)=>{setName(e.target.value)}} value={name} type="text" size="md" />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
@@ -149,12 +160,13 @@ import {
                               pointerEvents="none"
                               children={<MdOutlineEmail color="gray.800" />}
                             />
-                            <Input type="text" size="md" />
+                            <Input onChange={(e)=>{setMail(e.target.value)}} value={mail} type="text" size="md" />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
                           <FormLabel>Message</FormLabel>
                           <Textarea
+                            onChange={(e)=>{setMessage(e.target.value)}} value={message}
                             borderColor="rgb(224,87,87)"
                             _hover={{
                               borderRadius: 'gray.800',
@@ -164,6 +176,7 @@ import {
                         </FormControl>
                         <FormControl id="name" float="right">
                           <Button
+                            onClick={handleClick}
                             variant="solid"
                             bg="rgb(224,87,87)"
                             color="white"
@@ -180,6 +193,9 @@ import {
           </Box>
         </Flex>
         </Container>
+        <Flex alignItems={"center"} mb="20px" p={"5px 0px"} width={"100%"} bg={"rgb(224,87,87)"} >
+          <Text margin={"auto"} color={"white"}>© Designed By Nikhil Malik | All rights reserved | 2023 </Text>
+        </Flex>
     </Box>
     </>
     );
