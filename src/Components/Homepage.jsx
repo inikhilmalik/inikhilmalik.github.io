@@ -36,8 +36,8 @@ export const Homepage = () => {
                     <Flex direction={{ base: "column", sm: "row" }} mt={{ base: "25px", md: "45px" }}>
 
 
-                        <a href={Resume} download={"Nikhil-Malik-Resume"}  >
-                            <Button id="resume-button-2" _hover={{ bg: "none", color: "black", border: "1px solid rgb(224,87,87)", color: useColorModeValue("black", "white") }} borderRadius="0px" color="white" bg="rgb(224,87,87)" >Download Resume <FiDownload style={{ margin: "5px" }} /></Button>
+                        <a href={Resume} download={"Nikhil-Malik-Resume"}  target="blank" >
+                            <Button onClick={()=>{window.open(`https://drive.google.com/file/d/1EhwOuiFEVKV1ZAEM6O6RT_7AIBE6KpN9/view?usp=drivesdk`)}} id="resume-button-2" _hover={{ bg: "none", color: "black", border: "1px solid rgb(224,87,87)", color: useColorModeValue("black", "white") }} borderRadius="0px" color="white" bg="rgb(224,87,87)" >Download Resume <FiDownload style={{ margin: "5px" }} /></Button>
                         </a>
                         {/* <a href={"https://drive.google.com/file/d/1EhwOuiFEVKV1ZAEM6O6RT_7AIBE6KpN9/view?usp=drivesdk"} target="blank" >
                             <Button mt={{ base: "10px", sm: "0px" }} _hover={{ bg: "none", color: "black", border: "1px solid rgb(224,87,87)", color: useColorModeValue("black", "white") }} borderRadius="0px" color="white" bg="rgb(224,87,87)" ml={{ sm: "15px" }} >View Resume</Button>

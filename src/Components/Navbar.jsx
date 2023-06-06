@@ -90,10 +90,11 @@ export default function Navbar() {
             bg="none"
             _hover={{bg:"rgb(224,87,87)",color:"white"}}
             id="resume-button-1"
+            onClick={()=>{window.open(`https://drive.google.com/file/d/1EhwOuiFEVKV1ZAEM6O6RT_7AIBE6KpN9/view?usp=drivesdk`)}}
             // fontSize={'sm'}
             // variant={'link'}
             >
-            <a href={Resume} id="resume-link-1"  download={"Nikhil-Malik-Resume"} className="nav-link resume" >
+            <a href={Resume} id="resume-link-1"  download={"Nikhil-Malik-Resume"} className="nav-link resume" target="blank" >
             Resume
             </a>
           </Button>

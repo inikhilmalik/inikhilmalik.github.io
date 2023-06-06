@@ -12,8 +12,8 @@ export const About = () => {
                 <Text id="user-detail-intro">Hii Everyone, My name is Nikhil Malik and i'm from New Delhi. I have completed my Bachlor of Technology from Delhi Technological University specialzation in Mechanical Engineering. I have also completed a full time course of Full Stack Web Devepolment from Masai School, Bangalore. Developing many websites using HTML, CSS, JavaScript, React, Node, Express, MongoDB and can learn new software & technologies quickly. Capability to work in teams by providing valuable support. Seeking to advance a growing tech career as a Web Development Engineer.</Text>
             </Box>
             <Flex justifyContent="center" mt={{ base: "20px", md: "40px" }}>
-            <a href={Resume} download={"Nikhil-Malik-Resume"} >
-                <Button   _hover={{bg:"none",color:"black",border:"1px solid rgb(224,87,87)",color:useColorModeValue("black","white")}} borderRadius="0px" color="white" bg="rgb(224,87,87)" >Download Resume <FiDownload style={{margin:"5px"}} /></Button>
+            <a href={Resume} download={"Nikhil-Malik-Resume"} target='blank' >
+                <Button onClick={()=>{window.open(`https://drive.google.com/file/d/1EhwOuiFEVKV1ZAEM6O6RT_7AIBE6KpN9/view?usp=drivesdk`)}}  _hover={{bg:"none",color:"black",border:"1px solid rgb(224,87,87)",color:useColorModeValue("black","white")}} borderRadius="0px" color="white" bg="rgb(224,87,87)" >Download Resume <FiDownload style={{margin:"5px"}} /></Button>
             </a>
             </Flex>
         </Box>
